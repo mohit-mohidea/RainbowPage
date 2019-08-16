@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>proj2</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    </welcome-file-list>
+ <servlet>
+ <servlet-name>abcd</servlet-name>
+ <servlet-class>proj2.SearchFor</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcd</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+ <servlet-name>abcde</servlet-name>
+ <servlet-class>proj2.AddPlace</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcde</servlet-name>
+  <url-pattern>/addaplace</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ <servlet-name>abcdef</servlet-name>
+ <servlet-class>proj2.UpdateLocation</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcdef</servlet-name>
+  <url-pattern>/updateaplace</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+ <servlet-name>abcdefg</servlet-name>
+ <servlet-class>proj2.DeleteLocation</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcdefg</servlet-name>
+  <url-pattern>/deleteaplace</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+ <servlet-name>abcdefgh</servlet-name>
+ <servlet-class>proj2.Register</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcdefgh</servlet-name>
+  <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+ <servlet-name>abcdefghi</servlet-name>
+ <servlet-class>proj2.LogIn</servlet-class>
+ </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>abcdefghi</servlet-name>
+  <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
